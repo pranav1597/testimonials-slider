@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    box-shadow: 0 8px 6px -6px rgba(100, 100, 100, 0.459);
+}
+
+
+.slide{
+    /* border: 2px solid yellow; */
+   text-align: center;
+   background-image: url(images/pattern-curve.svg);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: bottom;
+   position: relative;
+}
+
+
+
+.profile-pic{
+    /* border: 2px solid blue; */
+    margin-top: 30px;
+    padding: 2em;
+    background-image: url(images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.image{
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 1px rgba(100, 100, 100, 0.459);
+}
+
+.button{
+    /* border: 2px solid blue; */
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    padding: .5em 0em;
+    border-radius: 50px;
+    position: absolute;
+    margin: -50px 140px;
+    background: white;
+    box-shadow: 0px 5px 10px 1px rgba(100, 100, 100, 0.459);
+}
+
+.arrow{
+    width:70%;
+}
+
+.flex-one{
+    border: 2px solid transparent;
+    background: url(images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: 150px 20px;
+}
+
+.profile-info{
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: 50px auto;
+    margin-bottom: 0;
+    
+   
+}
+
+.profile-desc{
+    font-weight: 300;
+    color: hsl(240, 38%, 20%);
+    line-height: 1.2em;
+    font-size: 1.2em;
+}
+
+.profile-name{
+    margin-top: 10px;
+    font-weight: 700;
+    color: hsl(240, 38%, 20%);
+}
+
+.profile-tag{
+    font-weight: 500;
+    color: hsl(240, 18%, 77%);
+    font-size: .9em;
+}
+
+.prev,.next{
+    cursor: pointer;
+}
+
+.active{
+    display: none;
+}
+
+.attribution{
+    text-align: center;
+    font-weight: 700;
+    color: blueviolet;
+    margin-top: 20px;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: purple
+}
+
+
+@media (min-width:650px){
+
+    .slide{
+        min-height: 90vh;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 0 5em;
+        background-size: 500px;
+        background-position: 0 430px;
+    }
+
+    .profile-flex{
+        /* border: 2px solid black; */
+        width: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-one{
+        position: absolute;
+        margin-right: 25%;
+        /* border: 2px solid black; */
+        background: url(images/pattern-quotes.svg);
+        background-repeat: no-repeat;
+        background-size: 90px;
+        background-position: 150px 0px;
+        border: none;
+    }
+
+    .profile-pic{
+        margin-top: 0;
+        padding: 3em;
+    }
+
+    .image{
+        width: 80%;
+    }
+
+    .button{
+        /* border: 2px solid green; */
+        margin-top: 350px;
+    }
+
+    .profile-info{
+        width: 75%;
+        text-align: left;
+        /* border: 2px solid red; */
+    }
+
+    .profile-desc{
+        line-height: 1.5em;
+    }
+
+    .name-flex{
+        display: flex;
+        align-items: center;
+        /* border: 2px solid red; */
+        margin-top: 20px;
+    }
+
+    .profile-name{
+        margin-top: 0;
+    }
+
+    .profile-tag{
+        margin-left: 5px;
+    }
+    .active{
+        display: none;
+    }
+}
+
+
+
